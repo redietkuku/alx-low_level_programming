@@ -20,7 +20,7 @@ int main(void)
 		sum += password[index++];
 	}
 	password[index] = '\0';
-	if (sum != 27772)
+	if (sum != 2772)
 	{
 		half_diff1 = (sum - 2772) / 2;
 		half_diff2 = (sum - 2772) / 2;
