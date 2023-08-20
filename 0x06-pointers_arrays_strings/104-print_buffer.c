@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
  * print_line - prints a buffer
  * @a: the buffer to be printed
@@ -13,7 +16,7 @@ void print_line(char *a, int d, int e)
 	for (x = 0; x <= 9; x++)
 	{
 		if (x <= d)
-			printf("%02x", a[e * 10 + x]
+			printf("%02x", a[e * 10 + x]);
 		else
 			printf("   ");
 		if (x % 2)
@@ -48,7 +51,7 @@ void print_buffer(char *b, int size)
 		}
 		else
 		{
-			printline(b, size % 10 - 1, i);
+			print_line(b, size % 10 - 1, i);
 		}
 		putchar('\n');
 	}
