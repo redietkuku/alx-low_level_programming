@@ -18,7 +18,7 @@ void print_line(char *a, int d, int e)
 		if (x <= d)
 			printf("%02x", a[e * 10 + x]);
 		else
-			printf("   ");
+			printf("  ");
 		if (x % 2)
 			putchar(' ');
 	}
