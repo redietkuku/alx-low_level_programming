@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * reverse_array - reverses array
  * @a: array to be reversed
@@ -13,6 +15,6 @@ void reverse_array(int *a, int n)
 	{
 		y = a[x];
 		a[x] = a[n - 1 - x];
-		a[n - 1 - x] = c;
+		a[n - 1 - x] = y;
 	}
 }
