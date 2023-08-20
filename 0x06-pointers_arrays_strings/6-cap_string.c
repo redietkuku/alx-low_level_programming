@@ -13,7 +13,7 @@ char *cap_string(char *string)
 
 	while (*(string + x))
 	{
-		if (*(string + x) <= 'a' && *(string + x) <= 'z')
+		if (*(string + x) >= 'a' && *(string + x) <= 'z')
 		{
 			if (x == 0)
 				*(string + x) -= 'a' - 'A';
