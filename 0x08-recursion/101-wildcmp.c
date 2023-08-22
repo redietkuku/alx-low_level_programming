@@ -19,7 +19,7 @@ int string_check(char *s1, char *s2, int x, int y)
 	{
 		return (string_check(s1, s2, x + 1, y + 1));
 	}
-	if (s1[x] == '\0' && s2[j] == '*')
+	if (s1[x] == '\0' && s2[y] == '*')
 	{
 		return (string_check(s1, s2, x, y + 1));
 	}
@@ -39,5 +39,5 @@ int string_check(char *s1, char *s2, int x, int y)
  */
 int wildcmp(char *s1, char *s2)
 {
-	return (string_check(s1, s2, 0, 0);
+	return (string_check(s1, s2, 0, 0));
 }
