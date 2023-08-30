@@ -13,7 +13,7 @@ int check_prime(int x, int y)
 	{
 		return (0);
 	}
-	else if ( x > y / 2)
+	else if (x > y / 2)
 	{
 		return (1);
 	}
@@ -21,6 +21,7 @@ int check_prime(int x, int y)
 	{
 		return (check_prime(x + 1, y));
 	}
+}
 
 /**
  * is_prime_number - function that returns 1 if the number is prime
