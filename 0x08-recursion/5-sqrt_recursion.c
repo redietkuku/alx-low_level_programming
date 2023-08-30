@@ -19,7 +19,7 @@ int check_square(int x, int y)
 		return (-1);
 	}
 
-	return (check_square( x + 1, y));
+	return (check_square(x + 1, y));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
