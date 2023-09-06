@@ -21,14 +21,14 @@ char *create_array(unsigned int size, char c)
 
 	arr = (char *)malloc(sizeof(char) * size);
 
-	if (array == NULL)
+	if (arr == NULL)
 	{
 		return (NULL);
 	}
 
 	for (x = 0; x < size; x++)
 	{
-		arr[x] = c'
+		arr[x] = c;
 	}
 
 	return (arr);
