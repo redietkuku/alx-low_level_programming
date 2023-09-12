@@ -1,0 +1,8 @@
+#ifndef _DEFINE_MACRO_AS_ABBREVIATION
+#define _DEFINE_MACRO_AS_ABBREVIATION
+
+
+#define SIZE 1024
+
+
+#endif
