@@ -29,7 +29,7 @@ void print_dog(struct dog *d)
 		}
 		else
 		{
-			printf("Ownwer: (nil)\n");
+			printf("Owner: (nil)\n");
 		}
 	}
 }
