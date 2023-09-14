@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 				print_sep_type = 0;
 				break;
 			case 's':
-				printf("%s", va_arg(a_list, char*));
+				str_pointer = va_arg(a_list, char*);
 				if (str_pointer == NULL)
 					str_pointer = "(nil)";
 				printf("%s", str_pointer);
