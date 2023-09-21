@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 #include "lists.h"
 
 /**
@@ -18,7 +22,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[d] %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 
 		count_element++;
