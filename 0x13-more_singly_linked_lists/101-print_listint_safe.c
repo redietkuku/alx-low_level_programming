@@ -3,27 +3,27 @@
 #include <stdlib.h>
 
 /**
- * _re - reallocates memory
+ * _r - reallocates memory
  * @list: old list
- * @size_new: size fo the new list
- * @new_node: new node to be added
+ * @Size: size fo the new list
+ * @New: new node to be added
  *
  * Return: pointer
  */
-const listint_t **_re(const listint_t **list, size_t size_new, const listint_t *new_node)
+const listint_t **_r(const listint_t **list, size_t Size, const listint_t *New)
 {
 	const listint_t **newlist;
 	size_t x;
 
-	newlist = malloc(size_new * sizeof(listint_t *));
+	newlist = malloc(Size * sizeof(listint_t *));
 	if (newlist == NULL)
 	{
 		free(list);
 		exit(98);
 	}
-	for (x = 0; x < size_new - 1; x++)
+	for (x = 0; x < Size - 1; x++)
 		newlist[x] = list[x];
-	newlist[x] = new_node;
+	newlist[x] = New;
 	free(list);
 	return (newlist);
 }
@@ -51,7 +51,7 @@ size_t print_listint_safe(const listint_t *head)
 			}
 		}
 		num++;
-		list = _re(list, num, head);
+		list = _r(list, num, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
