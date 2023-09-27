@@ -15,7 +15,7 @@ listint_t **_ra(listint_t **listO, size_t sizeN, listint_t *newN)
 	listint_t **newlist;
 	size_t i;
 
-	newlist = malloc(size * sizeof(listint_t *));
+	newlist = malloc(sizeN * sizeof(listint_t *));
 	if (newlist == NULL)
 	{
 		free(listO);
@@ -46,7 +46,7 @@ size_t free_listint_safe(listint_t **head)
 	{
 		for (x = 0; x < num; x++)
 		{
-			if (*head == listN[i])
+			if (*head == listN[x])
 			{
 				*head = NULL;
 				free(listN);
