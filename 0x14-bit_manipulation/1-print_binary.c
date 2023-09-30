@@ -2,10 +2,10 @@
 
 /**
  * calc_power - calculates base and power of a number
- * @b: base 
+ * @b: base
  * @p: power
  *
- * Return: an integer 
+ * Return: an integer
  */
 unsigned long int calc_power(unsigned int b, unsigned int p)
 {
@@ -35,7 +35,7 @@ void print_binary(unsigned long int n)
 	check = 0;
 	dividend = calc_power(2, sizeof(unsigned long int) * 8 - 1);
 
-	while (dividend ! = 0)
+	while (dividend != 0)
 	{
 		final_result = n & dividend;
 		if (final_result == dividend)
