@@ -1,4 +1,4 @@
-#inlcude "mian.h"
+#include "main.h"
 
 /**
  * clear_bit - sets value of bit ot 0 at a given index
