@@ -32,7 +32,7 @@ void print_binary(unsigned long int n)
 	char check;
 
 	check = 0;
-	dividend = clac_power(2, sizeof(unsigned long int) * 8 - 1);
+	dividend = calc_power(2, sizeof(unsigned long int) * 8 - 1);
 
 	while (dividend != 0)
 	{
@@ -40,7 +40,7 @@ void print_binary(unsigned long int n)
 		if (final_result == dividend)
 		{
 			check = 1;
-			_putchar( '1');
+			_putchar('1');
 		}
 		else if (check == 1 || dividend == 1)
 		{
