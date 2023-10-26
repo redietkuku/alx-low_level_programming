@@ -9,7 +9,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int dividend, final_resluts;
+	unsigned long int dividend, final_result;
 
 	if (index > (sizeof(unsigned long int) * 8 - 1))
 	{
@@ -18,7 +18,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	dividend = 1 << index;
 	final_result = n & dividend;
-	if (final_reslut == dividend)
+	if (final_result == dividend)
 	{
 		return (1);
 	}
