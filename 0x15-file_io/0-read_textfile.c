@@ -29,10 +29,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	rd_it = read(opn_it, the_buffer, letters);
 	wr_it = write(STDOUT_FILENO, the buffer, rd_it);
 
-	if(opn_it == -1 || rd_it == -1 || wr_it == -1 || wr_it != rd_it)
+	if (opn_it == -1 || rd_it == -1 || wr_it == -1 || wr_it != rd_it)
 	{
 		free(the_buffer);
-		retunr (0);
+		return (0);
 	}
 
 	free(the_buffer);
