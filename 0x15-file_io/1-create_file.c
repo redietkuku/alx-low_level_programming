@@ -18,31 +18,21 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (text_content != NULL)
 	{
-		for (length = 0; text_content[length]; length++)
+		for (length = 0; text_content[length];)
 		{
-
+			length++;
 		}
 	}
 
 	opn_it = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	wr_it = write(opn_it, text_content, length);
 
-	if (opn_it == -1)
+	if (opn_it == -1 || wr_it == -1)
 	{
 		return (-1);
 	}
 
-	if (text_content != NULL)
-	{
-		wr_it = write(opn_it, text_content, length);
-
-		if (wr_it == -1)
-		{
-			close(opn_it);
-			return (-1);
-		}
-	}
-
 	close(opn_it);
+
 	return (1);
 }
